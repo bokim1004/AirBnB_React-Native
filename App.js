@@ -1,13 +1,21 @@
-import React from 'react';
-import { SafeAreaView} from 'react-native';
-import HomeScreen from"./src/screens/Home";
+import React from "react";
+import {SafeAreaView} from "react-native";
+import HomeScreen from "./src/screens/Home";
+import SearchResultsScreen from "./src/screens/SearchResults";
+import Post from "./src/components/post";
+import feed from "./assets/data/feed";
 
-const App =()=>{
-  return(
+const post1 = feed[0];
+const post2 = feed[2];
+
+const App = () => {
+  return (
     <>
-    <SafeAreaView>
-    <HomeScreen/>
-    </SafeAreaView>
+      <SafeAreaView>
+        {/* <HomeScreen /> */}
+        {/* <Post post={post2} /> */}
+        <SearchResultsScreen />
+      </SafeAreaView>
     </>
   );
 };
